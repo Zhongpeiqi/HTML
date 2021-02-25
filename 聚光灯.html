@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+    <h2>宝贝</h2>
+    <h2>I Love You</h2>
+    <div class="circle"></div>
+</section>
+<script>
+    const pos =document.documentElement
+    pos.addEventListener('mousemove',e =>{
+        pos.style.setProperty('--x',e.clientX+'px')
+        pos.style.setProperty('--y',e.clientY+'px')
+    })
+</script>
+</body>
+</html>
